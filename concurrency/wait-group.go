@@ -24,5 +24,7 @@ func main() {
 }
 
 func escrever(text string) {
-	fmt.Println(text)
+	for i:=0;i<5:i++{
+		fmt.Println(text)
+	}
 }
