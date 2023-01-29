@@ -1,0 +1,26 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type Node {
+  id: String!
+  name: String!
+  operations: Operation
+}
+
+type Operation {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  nodes: [Node!]!
+}
+
+input NewNode {
+   name: String!
+}
+
+type Mutation {
+  createNode(input: NewNode!): Node!
+}
